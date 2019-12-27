@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">MucketList</string>
+    <string name="app_dev_name">(DEV)먹킷리스트</string>
+    <string name="app_name">먹킷리스트</string>
 </resources>
