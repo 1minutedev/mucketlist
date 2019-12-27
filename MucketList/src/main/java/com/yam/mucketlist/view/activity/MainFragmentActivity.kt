@@ -1,9 +1,10 @@
-package com.yam.mucketlist
+package com.yam.mucketlist.view.activity
 
 import android.os.Bundle
-import com.yam.core.view.YFragmentActivity
+import com.yam.core.view.activity.YFragmentActivity
+import com.yam.mucketlist.R
 
-class MainActivity : YFragmentActivity() {
+class MainFragmentActivity : YFragmentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

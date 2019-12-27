@@ -1,4 +1,4 @@
-package com.yam.core.view
+package com.yam.core.view.activity
 
 import android.os.Bundle
 import android.os.PersistableBundle
