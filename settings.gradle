@@ -1,1 +1,1 @@
-include ':MucketList'
+include ':MucketList', ':jw_core', ':JW_FUNC'
