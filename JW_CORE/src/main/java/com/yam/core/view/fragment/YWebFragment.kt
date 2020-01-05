@@ -5,7 +5,7 @@ import com.yam.core.view.webview.YWebView
 
 open class YWebFragment : YFragment() {
 
-    private lateinit var yWebView: YWebView
+    lateinit var yWebView: YWebView
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)

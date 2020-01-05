@@ -8,7 +8,7 @@ open class YApplication : Application() {
     companion object {
         var fragmentList: ArrayList<Fragment> = ArrayList()
 
-        open fun addFragment(fragment: Fragment){
+        fun addFragment(fragment: Fragment){
             YApplication.fragmentList.add(fragment)
         }
     }
