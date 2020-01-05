@@ -4,7 +4,7 @@ import android.os.Bundle
 import com.yam.core.application.YApplication
 import com.yam.core.view.activity.YFragmentActivity
 import com.yam.mucketlist.R
-import com.yam.mucketlist.util.RUtil
+import com.yam.core.util.RUtil
 import com.yam.mucketlist.view.fragment.SplashFragment
 
 class MainFragmentActivity : YFragmentActivity() {
@@ -14,7 +14,6 @@ class MainFragmentActivity : YFragmentActivity() {
         setContentView(R.layout.activity_main)
 
         var fragment = SplashFragment()
-
         var arguments = Bundle()
 
         fragment.arguments = arguments
