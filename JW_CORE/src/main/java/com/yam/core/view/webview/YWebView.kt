@@ -15,6 +15,10 @@ open class YWebView : WebView {
         isFocusable = true
         scrollBarStyle = Context.BIND_AUTO_CREATE
 
+        if (Build.VERSION_CODES.KITKAT <= Build.VERSION.SDK_INT) {
+            setWebContentsDebuggingEnabled(true)
+        }
+
         settings.defaultTextEncodingName = "UTF-8"
         settings.javaScriptEnabled = true
         settings.domStorageEnabled = true
@@ -51,6 +55,11 @@ open class YWebView : WebView {
             cookieManager.setAcceptCookie(true)
             cookieManager.setAcceptThirdPartyCookies(this, true)
         }
+
+        settings.setAllowFileAccess(true)
+        settings.setAllowContentAccess(true)
+        settings.setAllowFileAccessFromFileURLs(true)
+        settings.setAllowUniversalAccessFromFileURLs(true)
     }
 
 }

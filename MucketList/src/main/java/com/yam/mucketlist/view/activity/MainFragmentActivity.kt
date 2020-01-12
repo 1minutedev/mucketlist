@@ -2,10 +2,10 @@ package com.yam.mucketlist.view.activity
 
 import android.os.Bundle
 import com.yam.core.application.YApplication
+import com.yam.core.util.RUtil
 import com.yam.core.view.activity.YFragmentActivity
 import com.yam.mucketlist.R
-import com.yam.core.util.RUtil
-import com.yam.mucketlist.view.fragment.SplashFragment
+import com.yam.mucketlist.view.fragment.native.NativeSplashFragment
 
 class MainFragmentActivity : YFragmentActivity() {
 
@@ -13,7 +13,7 @@ class MainFragmentActivity : YFragmentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var fragment = SplashFragment()
+        var fragment = NativeSplashFragment()
         var arguments = Bundle()
 
         fragment.arguments = arguments
