@@ -82,11 +82,12 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':JW_CORE')
+    implementation project(':JW_FUNC')
+
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core-ktx:1.1.0'
-
-    implementation project(':JW_CORE')
-    implementation project(':JW_FUNC')
+    implementation 'com.android.support:recyclerview-v7:29.0.0'
 }

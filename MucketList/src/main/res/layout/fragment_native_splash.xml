@@ -12,7 +12,6 @@
         android:src="@drawable/bg_splash_01"/>
 
     <View
-        android:id="@+id/dimm"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#BF000000"/>
