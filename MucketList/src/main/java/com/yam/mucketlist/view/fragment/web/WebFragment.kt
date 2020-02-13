@@ -1,4 +1,4 @@
-package com.yam.mucketlist.view.fragment
+package com.yam.mucketlist.view.fragment.web
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,9 +11,9 @@ import com.yam.core.view.fragment.YWebFragment
 import com.yam.core.util.RUtil
 import com.yam.core.view.webview.YWebView
 
-open class MainFragment : YWebFragment() {
+open class WebFragment : YWebFragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        wrapper = inflater.inflate(RUtil.getLayoutR(activity!!.applicationContext, "fragment_main"), null)
+        wrapper = inflater.inflate(RUtil.getLayoutR(activity!!.applicationContext, "fragment_web"), null)
         return wrapper
     }
 

@@ -29,11 +29,7 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.MainViewHolder>() {
     }
 
     inner class MainViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(
-        LayoutInflater.from(parent.context).inflate(
-            RUtil.getLayoutR(parent.context, "item_post"),
-            parent,
-            false
-        )
+        LayoutInflater.from(parent.context).inflate(RUtil.getLayoutR(parent.context, "item_post"), parent, false)
     ) {
         val tvTitle = itemView.tv_main_title
         val tvContent = itemView.tv_main_content

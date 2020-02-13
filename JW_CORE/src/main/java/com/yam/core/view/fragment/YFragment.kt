@@ -17,8 +17,16 @@ abstract class YFragment : Fragment() {
         onInit()
     }
 
+    /**
+     * onActivityCreated() 에서 호출해주는 메서드로,
+     * 화면이 이동되고 최초로 호출되는 메서드(선택적으로 사용)
+     */
     abstract fun onInit()
 
+    /**
+     * Fragment 간 이동하는 메서드로,
+     * 애니메이션을 지정해 줄 수 있음
+     */
     open fun moveToFragment(fragment: Fragment, anim: String) {
         var fragmentTransaction = activity!!.supportFragmentManager.beginTransaction()
 
